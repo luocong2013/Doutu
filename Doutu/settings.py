@@ -66,9 +66,10 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'Doutu.pipelines.DoutuPipeline': 300,
-#}
+# 设置处理返回数据的类及执行优先级
+ITEM_PIPELINES = {
+    'Doutu.pipelines.DoutuPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
